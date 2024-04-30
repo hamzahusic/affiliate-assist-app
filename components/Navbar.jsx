@@ -10,7 +10,7 @@ const Navbar = () => {
     const [isOpen,setIsOpen] = useState(false);
 
     return ( 
-        <div className="main-container flex justify-between items-center p-5 mt-5">
+        <div className="main-container flex justify-between items-center p-5 mt-10">
             <div className="flex gap-1 items-center">
                 <Image
                     src={'/images/logo.png'}
