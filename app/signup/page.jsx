@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { BiSolidHide , BiSolidShow} from "react-icons/bi";
 
-const LogIn = () => {
+const SignUp = () => {
 
     const [showPass,setShowPass] = useState(false);
 
@@ -13,9 +13,9 @@ const LogIn = () => {
         <div className=" grid place-items-center min-h-screen">
             <div className=" max-w-[424px]">
                 <div className=" text-center">
-                    <h1 className=" text-4xl font-medium">Log in</h1>
-                    <p className=" text-base mt-1">Don’t have an ccount? 
-                    <Link href={"/signup"} className=" font-bold underline"> Sign up</Link>
+                    <h1 className=" text-4xl font-medium">Sign up</h1>
+                    <p className=" text-base mt-1">Have an account? 
+                    <Link href={"/login"} className=" font-bold underline"> Log in</Link>
                     </p>
                     <button className=" flex items-center mx-auto gap-4 bg-white border-[1px] border-tcolor rounded-[40px] px-20 py-3 my-10">
                         <Image
@@ -26,7 +26,7 @@ const LogIn = () => {
                             priority={true}
                             alt="Google icon"
                         />
-                        Log in with Google
+                        Sign up with Google
                     </button>
                 </div>
                     <p className=" text-tcolor mb-4 flex items-center gap-5">
@@ -45,11 +45,11 @@ const LogIn = () => {
                         </div>
                     </label>
                     <input type={showPass ? 'text' : 'password'} name="pass" className="px-4 py-3 rounded-[12px] border-[1px] border-tcolor" required/>
-                    <button className=" text-xl rounded-[40px] bg-tcolor text-white py-4 mt-4">Log in</button>
+                    <button className=" text-xl rounded-[40px] bg-tcolor text-white py-4 mt-4">Sign Up</button>
                 </form>
             </div>
         </div>
      );
 }
  
-export default LogIn;
+export default SignUp;
