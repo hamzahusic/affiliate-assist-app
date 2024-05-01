@@ -11,7 +11,7 @@ const AffiliateGame = () => {
                 height={464}
                 alt="Picture of people working together"
                 quality={100}
-                className=" max-w-[400px] lg:max-w-[600px]"
+                className=" max-w-[350px] lg:max-w-[600px]"
             />
             <div className="max-w-[600px]">
                 <h2 className=" font-extrabold text-4xl  lg:text-5xl">Transform Your Affiliate Marketing Game Today!</h2>

@@ -16,7 +16,7 @@ const About = () => {
                 height={412}
                 alt="Picture of a graph"
                 quality={100}
-                className=" max-w-[400px] lg:max-w-[600px] mx-auto"
+                className="max-w-[350px] lg:max-w-[600px] mx-auto"
             />
         </div>
      );

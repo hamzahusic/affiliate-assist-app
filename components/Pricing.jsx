@@ -16,6 +16,7 @@ const Pricing = () => {
                         width={72}
                         height={72}
                         quality={100}
+                        alt="Icon for pricing"
                         />
 
                         <div>

@@ -8,7 +8,7 @@ const Benefits = () => {
                     src={'/images/url.png'}
                     width={96}
                     height={96}
-                    alt="URL Image"
+                    alt="URL icon"
                     className=" mx-auto"
                 />
                 <h2 className=" font-bold text-2xl py-4">Instant Product Information</h2>
@@ -20,7 +20,7 @@ const Benefits = () => {
                     src={'/images/automation.png'}
                     width={96}
                     height={96}
-                    alt="URL Image"
+                    alt="Automation icon"
                     className=" mx-auto"
                 />
                 <h2 className=" font-bold text-2xl py-4">Time-Saving Automation</h2>
@@ -32,7 +32,7 @@ const Benefits = () => {
                     src={'/images/creation.png'}
                     width={96}
                     height={96}
-                    alt="URL Image"
+                    alt="Creation icon"
                     className=" mx-auto"
                 />
                 <h2 className=" font-bold text-2xl py-4">Streamlined Content Creation</h2>
@@ -44,7 +44,7 @@ const Benefits = () => {
                     src={'/images/template.png'}
                     width={96}
                     height={96}
-                    alt="URL Image"
+                    alt="Template icon"
                     className=" mx-auto"
                 />
                 <h2 className=" font-bold text-2xl py-4">Customizable Templates</h2>

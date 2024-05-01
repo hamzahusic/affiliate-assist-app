@@ -19,6 +19,7 @@ const Footer = () => {
                 height={400}
                 quality={100}
                 className=" hidden md:block max-w-[350px] lg:max-w-[500px]"
+                alt="Image of wallet"
                 />
             </div>
             
@@ -26,7 +27,7 @@ const Footer = () => {
                 <h3 className=" text-lg md:text-[24px] font-semibold hidden md:block">Affiliate Assist</h3>
                 <div className="flex flex-col-reverse md:flex-row items-center gap-5 md:gap-10">
                     <Link href={'/'}>
-                    © Affiliate Assist  2024
+                    © Affiliate Assist  { new Date().getFullYear()}
                     </Link>
                     <Link href={'/'}>
                     Privacy policy
