@@ -3,6 +3,7 @@ import AffiliateGame from "@/components/AffiliateGame";
 import Benefits from "@/components/Benefits";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import Pricing from "@/components/Pricing";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Benefits/>
       <AffiliateGame/>
       <About/>
+      <Pricing/>
     </>
   );
 }

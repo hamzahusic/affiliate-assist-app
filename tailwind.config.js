@@ -18,7 +18,8 @@ module.exports = {
       },
       colors:{
         'primary' : '#FEFAF6',
-        'tcolor' : '#323232'
+        'tcolor' : '#323232',
+        'mcolor' : '#F8D57E'
       }
     },
   },
