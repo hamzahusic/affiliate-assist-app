@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import AffiliateGame from "@/components/AffiliateGame";
 import Benefits from "@/components/Benefits";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
@@ -14,6 +15,7 @@ export default function Home() {
       <AffiliateGame/>
       <About/>
       <Pricing/>
+      <Footer/>
     </>
   );
 }
