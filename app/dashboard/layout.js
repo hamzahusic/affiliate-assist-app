@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaHome, FaPhotoVideo, FaUser } from "react-icons/fa";
 import { BsFillPostcardHeartFill } from "react-icons/bs";
 import { AiFillProduct, AiOutlineQuestionCircle } from "react-icons/ai";
 import { IoDocumentText, IoLogOut } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
+import { usePathname } from "next/navigation";
 
 const Layout = ({children}) => {
 
@@ -43,8 +44,18 @@ const Layout = ({children}) => {
             icon : <FaPhotoVideo size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
         }
     ]
+    
+    const pathName = usePathname();
 
     const [isActive,setIsActive] = useState('/dashboard');
+
+    const updateActivePath = () => {
+        setIsActive(pathName)
+    }
+
+    useEffect(() => {
+        updateActivePath();
+    },[pathName])
 
     return ( 
         <div className=" flex main-container">
@@ -66,8 +77,7 @@ const Layout = ({children}) => {
                     {nav_links.map((link) => (
                         <Link href={link.href} 
                             key={link.name} 
-                            className={` flex items-center gap-3 px-4 py-3 ${isActive === link.href ? 'bg-white shadow' : 'bg-transparent'} rounded-[15px]`}
-                            onClick={() => setIsActive(link.href)}
+                            className={` flex items-center gap-3 px-4 py-3 ${isActive === link.href ? 'bg-white shadow-sm' : 'bg-transparent'} rounded-[15px]`}
                             >
                             {link.icon}
                             <span className=" text-[12px] font-medium hidden lg:block">{link.name}</span>
@@ -79,7 +89,6 @@ const Layout = ({children}) => {
                     <p className=" font-semibold py-4 lg:py-6 text-sm text-center lg:text-left">ACCOUNT PAGES</p>
                     <Link href={'/profile'} 
                         className={` flex items-center gap-3 px-4 py-3 ${isActive === '/dashboard/profile' ? 'bg-white' : 'bg-transparent'} rounded-[15px]`}
-                        onClick={() => setIsActive('/profile')}
                         >
                         <FaUser size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
                         <span className=" text-[12px] font-medium hidden lg:block">Profile</span>
@@ -104,7 +113,9 @@ const Layout = ({children}) => {
                     </Link>
                 </div>
             </div>
-            {children}
+            <div className=" px-2 sm:px-5 md:px-10 pt-5 flex-grow">
+                {children} 
+            </div>
         </div>
      );
 }
