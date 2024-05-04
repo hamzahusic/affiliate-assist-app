@@ -34,12 +34,12 @@ const Layout = ({children}) => {
             icon : <BsFillPostcardHeartFill size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
         },
         {
-            name : 'Email',
+            name : 'Emails',
             href : '/dashboard/email',
             icon : <MdEmail size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
         },
         {
-            name : 'Video',
+            name : 'Videos',
             href : '/dashboard/video',
             icon : <FaPhotoVideo size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
         }
@@ -59,7 +59,7 @@ const Layout = ({children}) => {
 
     return ( 
         <div className=" flex main-container">
-            
+            {/* DASHBOARD NAVBAR */}
             <div className=" px-2 sm:px-4 max-w-[85px] sm:max-w-[100px] lg:min-w-[230px]">
                 {/* LOGO */}
                 <div className=" flex items-center justify-center gap-[5px] pt-9 pb-7 border-b-[1px] border-tcolor/20">

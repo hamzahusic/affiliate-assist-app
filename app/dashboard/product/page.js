@@ -69,46 +69,14 @@ const page = () => {
             price: 1299,
             createdAt: '14/06/21'
         },
-        {
-            name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
-            category: 'Laptop',
-            brand: 'DELL',
-            price: 1299,
-            createdAt: '14/06/21'
-        },
-        {
-            name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
-            category: 'Laptop',
-            brand: 'DELL',
-            price: 1299,
-            createdAt: '14/06/21'
-        },
         
-        {
-            name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
-            category: 'Laptop',
-            brand: 'DELL',
-            price: 1299,
-            createdAt: '14/06/21'
-        },
-        {
-            name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
-            category: 'Laptop',
-            brand: 'DELL',
-            price: 1299,
-            createdAt: '14/06/21'
-        },
     ];
 
     return ( 
         <>
             <PageNav placeholder={"Search products..."} pageName={"Products"}/>
             {/*Create button*/}
-            <Link href={"/"} className=" flex items-center gap-[10px] px-4 py-3 rounded-[15px] bg-dcolor w-fit">
+            <Link href={"/dashboard/product/add"} className=" flex items-center gap-[10px] px-4 py-3 rounded-[15px] bg-dcolor w-fit">
                 <IoIosAddCircle size={20} className=" text-tcolor"/>
                 <span className=" font-medium text-[15px]">Create Product</span>
             </Link>
