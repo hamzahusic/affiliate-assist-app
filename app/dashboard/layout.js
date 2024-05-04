@@ -50,7 +50,22 @@ const Layout = ({children}) => {
     const [isActive,setIsActive] = useState('/dashboard');
 
     const updateActivePath = () => {
-        setIsActive(pathName)
+
+        {/*Gets / after dashboard path ex. /dashboard/product/ */}
+
+        let fixedPath = '';
+
+        if(pathName.length > 10){
+            let indexOfNextSlash = pathName.indexOf('/',11)
+            let mainPath = pathName.substring(0, indexOfNextSlash == -1 ? pathName.length : indexOfNextSlash)
+            fixedPath = mainPath
+        }
+        else{
+            fixedPath = pathName;
+        }
+
+        setIsActive(fixedPath)
+
     }
 
     useEffect(() => {
