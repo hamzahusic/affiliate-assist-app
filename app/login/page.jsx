@@ -44,7 +44,7 @@ const LogIn = () => {
                             {showPass ? "Hide" : "Show"}
                         </div>
                     </label>
-                    <input type={showPass ? 'text' : 'password'} name="pass" className="px-4 py-3 rounded-[12px] border-[1px] border-tcolor" required/>
+                    <input type={showPass ? 'text' : 'password'} name="password" className="px-4 py-3 rounded-[12px] border-[1px] border-tcolor" required/>
                     <button className=" text-xl rounded-[40px] bg-tcolor text-white py-4 mt-4">Log in</button>
                 </form>
             </div>

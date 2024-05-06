@@ -50,12 +50,11 @@ const Layout = ({children}) => {
     const [isActive,setIsActive] = useState('/dashboard');
 
     const updateActivePath = () => {
-
-        {/*Gets / after dashboard path ex. /dashboard/product/ */}
-
+        
         let fixedPath = '';
-
+        
         if(pathName.length > 10){
+            {/*Gets / after dashboard path ex. /dashboard/product/ */}
             let indexOfNextSlash = pathName.indexOf('/',11)
             let mainPath = pathName.substring(0, indexOfNextSlash == -1 ? pathName.length : indexOfNextSlash)
             fixedPath = mainPath
@@ -68,9 +67,11 @@ const Layout = ({children}) => {
 
     }
 
+   
     useEffect(() => {
         updateActivePath();
     },[pathName])
+
 
     return ( 
         <div className=" flex main-container">
@@ -102,13 +103,13 @@ const Layout = ({children}) => {
                 {/* ACC LINKS */}
                 <div>
                     <p className=" font-semibold py-4 lg:py-6 text-sm text-center lg:text-left">ACCOUNT PAGES</p>
-                    <Link href={'/profile'} 
+                    <Link href={'/dashboard/profile'} 
                         className={` flex items-center gap-3 px-4 py-3 ${isActive === '/dashboard/profile' ? 'bg-white' : 'bg-transparent'} rounded-[15px]`}
                         >
                         <FaUser size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
                         <span className=" text-[12px] font-medium hidden lg:block">Profile</span>
                     </Link>
-                    <Link href={'/profile'} 
+                    <Link href={'/'} 
                         className={`flex items-center gap-3 px-4 py-3 rounded-[15px]`}
                     >
                         <IoLogOut size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>

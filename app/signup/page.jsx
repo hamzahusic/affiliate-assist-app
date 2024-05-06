@@ -38,13 +38,13 @@ const SignUp = () => {
                 <form className=" flex flex-col gap-4">
                     <label htmlFor="email">Your email</label>
                     <input type="email" name="email" className="px-4 py-3 rounded-[12px] border-[1px] border-tcolor" required/>
-                    <label htmlFor="pass" className=" flex items-center justify-between pr-2">Your password
+                    <label htmlFor="password" className=" flex items-center justify-between pr-2">Your password
                         <div className=" flex items-center gap-1 text-sm cursor-pointer select-none" onClick={() => setShowPass(!showPass)}>
                             {showPass ? <BiSolidShow size={22}/> : <BiSolidHide size={22}/>}
                             {showPass ? "Hide" : "Show"}
                         </div>
                     </label>
-                    <input type={showPass ? 'text' : 'password'} name="pass" className="px-4 py-3 rounded-[12px] border-[1px] border-tcolor" required/>
+                    <input type={showPass ? 'text' : 'password'} name="password" className="px-4 py-3 rounded-[12px] border-[1px] border-tcolor" required/>
                     <button className=" text-xl rounded-[40px] bg-tcolor text-white py-4 mt-4">Sign Up</button>
                 </form>
             </div>
