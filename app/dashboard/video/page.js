@@ -12,8 +12,8 @@ const page = () => {
                 className="grid place-items-center h-[350px]"
                 >
                     <div>
-                        <IoIosTimer size={55} className=" mx-auto"/>
-                        <p class="mt-2 font-semibold text-lg tracking-wider">
+                        <IoIosTimer size={60} className=" mx-auto"/>
+                        <p className="mt-2 font-semibold text-xl tracking-wider soonAnm h-[28px] overflow-hidden whitespace-nowrap">
                             Coming soon...
                         </p>
                     </div>
