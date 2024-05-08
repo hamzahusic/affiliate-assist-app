@@ -8,7 +8,7 @@ const page = () => {
         <>
             <PageNav placeholder={"Search emails..."} pageName={"Emails"}/>
             <div className="bg-white rounded-[15px] px-4 py-9">
-                <h2 className=" text-lg mb-4">Emails that you created</h2>
+                <h2 className=" text-lg mb-4 font-medium">Emails that you created</h2>
                 <div 
                 className="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-[190px] gap-[27px] max-h-[650px] h-full overflow-y-auto"
                 >
