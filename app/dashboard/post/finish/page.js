@@ -7,14 +7,14 @@ import { FiDownloadCloud } from "react-icons/fi";
 const page = () => {
     return ( 
         <>
-            <PageNav placeholder={"Search blogs..."} pageName={"Blogs"}/>
+            <PageNav placeholder={"Search posts..."} pageName={"Social posts"}/>
             <div className=" bg-white rounded-[15px] shadow-sm py-8 px-6">
                 <div className=" flex justify-between items-center mb-4">
                     <GoBackBtn href={'/dashboard/post'}/>
                     <button className=" bg-[#48BB78] rounded-[15px] text-white px-8 py-2 text-[15px]">Finish</button>
                 </div>
-                <h2 className=" text-[20px] font-medium mb-4">Post preview</h2>
-                <div className="flex gap-10 flex-col lg:flex-row items-center">
+                <h2 className=" text-[20px] font-semibold mb-4">Post preview</h2>
+                <div className="flex gap-10 flex-col lg:flex-row items-center px-2 max-h-[650px] h-full overflow-y-auto no-scrollbar">
                     <div className=" md:mx-16">
                         <Image
                             src={'/images/tempPostImg.png'}
@@ -30,9 +30,9 @@ const page = () => {
                             <RegenerateBtn/>
                         </div>
                         <div className=" flex flex-col gap-[5px] py-2 ">
-                            <label htmlFor="title">Title</label>
+                            <label htmlFor="title" className=" font-semibold">Title</label>
                             <input type="text" name="title" className=" rounded-[5px] outline-none p-2 border-tcolor/20 border-[1px]"/>
-                            <label htmlFor="description">Description</label>
+                            <label htmlFor="description" className=" font-semibold">Description</label>
                             <textarea rows={3} name="description" className=" rounded-[5px] outline-none p-2 border-tcolor/20 border-[1px]"></textarea>
                         </div>
                         <div>
