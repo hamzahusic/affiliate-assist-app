@@ -1,5 +1,6 @@
 import GoBackBtn from "@/components/GoBack";
 import PageNav from "@/components/PageNav";
+import RegenerateBtn from "@/components/RegenerateBtn";
 import { HiSparkles  } from "react-icons/hi2";
 import { MdCancel } from "react-icons/md";
 
@@ -44,10 +45,7 @@ const page = () => {
                             <div className=" mt-4">
                                 <div className=" flex items-center justify-between">
                                     <p className=" text-[15px] font-medium">Description</p>
-                                    <button className=" text-[10px] flex items-center gap-2 bg-dcolor rounded-[15px] px-[14px] py-2">
-                                        Regenerate
-                                        <HiSparkles  size={15} />
-                                    </button>
+                                    <RegenerateBtn/>
                                 </div>
                                 <textarea rows={5} className="rounded-[5px] border-[1px] border-tcolor/20 px-3 py-1 outline-none w-full mt-[5px]"/>
                             </div>
