@@ -38,7 +38,8 @@ const CreateModal = ({isOpen,hideModal}) => {
                                 </div>
                             </div>
                         </div>
-
+                       
+                        <button className=" bg-[#48BB78] rounded-[15px] text-white px-14 py-2 text-[15px] mt-5 w-full">Next</button>
                     </div>
                 </div>
             : 
