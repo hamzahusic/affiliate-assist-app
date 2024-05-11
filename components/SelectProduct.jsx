@@ -1,6 +1,6 @@
 import { MdCancel } from "react-icons/md";
 
-const SelectProduct = () => {
+const SelectProduct = ({disableRemove}) => {
     return ( 
         <div className=" flex items-center border-[1px] text-sm p-2 rounded-[5px] gap-1 justify-between w-full">
             <div className=" flex gap-2 items-center">
@@ -13,7 +13,7 @@ const SelectProduct = () => {
                 />
                 <p className=" text-xs font-semibold">Dell XPS 13 9320</p>
             </div>
-            <MdCancel size={14} className=" text-red-600 cursor-pointer" />
+            {disableRemove ? <div></div> :<MdCancel size={14} className=" text-red-600 cursor-pointer" />}
         </div>
      );
 }
