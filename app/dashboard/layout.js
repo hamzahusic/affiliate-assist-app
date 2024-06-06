@@ -88,7 +88,7 @@ const Layout = ({children}) => {
                     {nav_links.map((link) => (
                         <Link href={link.href} 
                             key={link.name} 
-                            className={` flex items-center gap-3 px-4 py-2 my-1 border-[1px] ${isActive === link.href ? 'bg-dcolor border-tcolor/50' : 'bg-transparent border-transparent'} rounded-[15px]`}
+                            className={` flex items-center gap-3 px-4 py-2 my-1 border-[1px] ${isActive === link.href ? 'bg-[#FFEDBD] border-tcolor/50' : 'bg-transparent border-transparent'} rounded-[15px]`}
                             >
                             <span className={`${isActive === link.href ? 'text-white bg-tcolor' : 'text-tcolor bg-dcolor'} p-[8px] rounded-[12px]`}>{link.icon}</span>
                             <span className=" text-[12px] font-medium hidden lg:block">{link.name}</span>
@@ -99,7 +99,7 @@ const Layout = ({children}) => {
                 <div>
                     <p className=" font-semibold py-4 lg:py-6 text-sm text-center lg:text-left">ACCOUNT PAGES</p>
                     <Link href={'/dashboard/profile'} 
-                        className={` flex items-center gap-3 px-4 py-2 my-1 border-[1px] ${isActive === '/dashboard/profile' ? 'bg-dcolor border-tcolor/50' : 'bg-transparent border-transparent'} rounded-[15px]`}
+                        className={` flex items-center gap-3 px-4 py-2 my-1 border-[1px] ${isActive === '/dashboard/profile' ? 'bg-[#FFEDBD] border-tcolor/50' : 'bg-transparent border-transparent'} rounded-[15px]`}
                         >
                         <span className={`${isActive === '/dashboard/profile' ? 'text-white bg-tcolor' : 'text-tcolor bg-dcolor'} p-[8px] rounded-[12px]`}>
                             <FaUser size={19}/>
