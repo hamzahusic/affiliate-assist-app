@@ -16,27 +16,27 @@ const Layout = ({children}) => {
         {
             name : 'Dashboard',
             href : '/dashboard',
-            icon : <FaHome size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
+            icon : <FaHome size={19}/>
         },
         {
             name : 'Products',
             href : '/dashboard/product',
-            icon : <AiFillProduct size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
+            icon : <AiFillProduct size={19}/>
         },
         {
             name : 'Blogs',
             href : '/dashboard/blog',
-            icon : <IoDocumentText size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
+            icon : <IoDocumentText size={19}/>
         },
         {
             name : 'Social posts',
             href : '/dashboard/post',
-            icon : <BsFillPostcardHeartFill size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
+            icon : <BsFillPostcardHeartFill size={19}/>
         },
         {
             name : 'Emails',
             href : '/dashboard/email',
-            icon : <MdEmail size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
+            icon : <MdEmail size={19}/>
         }
     ]
     
@@ -73,7 +73,7 @@ const Layout = ({children}) => {
             {/* DASHBOARD NAVBAR */}
             <div className=" px-2 sm:px-4 max-w-[85px] sm:max-w-[100px] lg:min-w-[230px]">
                 {/* LOGO */}
-                <div className=" flex items-center justify-center gap-[5px] pt-9 pb-7 border-b-[1px] border-tcolor/20">
+                <div className=" flex items-center justify-center gap-[5px] pt-9 pb-7 border-b-[1px] border-tcolor/30">
                     <Image
                         src={'/images/logo.png'}
                         width={16}
@@ -81,16 +81,16 @@ const Layout = ({children}) => {
                         quality={100}
                         alt="logo"
                     />
-                    <p className=" text-[15px] font-medium hidden lg:block">AFFILIATE ASSIST</p>
+                    <p className=" text-[15px] font-semibold hidden lg:block">AFFILIATE ASSIST</p>
                 </div>
                 {/* NAV LINKS */}
                 <div className="py-4 flex flex-col">
                     {nav_links.map((link) => (
                         <Link href={link.href} 
                             key={link.name} 
-                            className={` flex items-center gap-3 px-4 py-3 ${isActive === link.href ? 'bg-white shadow-sm' : 'bg-transparent'} rounded-[15px]`}
+                            className={` flex items-center gap-3 px-4 py-2 my-1 border-[1px] ${isActive === link.href ? 'bg-dcolor border-tcolor/50' : 'bg-transparent border-transparent'} rounded-[15px]`}
                             >
-                            {link.icon}
+                            <span className={`${isActive === link.href ? 'text-white bg-tcolor' : 'text-tcolor bg-dcolor'} p-[8px] rounded-[12px]`}>{link.icon}</span>
                             <span className=" text-[12px] font-medium hidden lg:block">{link.name}</span>
                         </Link>
                     ))}
@@ -99,15 +99,19 @@ const Layout = ({children}) => {
                 <div>
                     <p className=" font-semibold py-4 lg:py-6 text-sm text-center lg:text-left">ACCOUNT PAGES</p>
                     <Link href={'/dashboard/profile'} 
-                        className={` flex items-center gap-3 px-4 py-3 ${isActive === '/dashboard/profile' ? 'bg-white' : 'bg-transparent'} rounded-[15px]`}
+                        className={` flex items-center gap-3 px-4 py-2 my-1 border-[1px] ${isActive === '/dashboard/profile' ? 'bg-dcolor border-tcolor/50' : 'bg-transparent border-transparent'} rounded-[15px]`}
                         >
-                        <FaUser size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
+                        <span className={`${isActive === '/dashboard/profile' ? 'text-white bg-tcolor' : 'text-tcolor bg-dcolor'} p-[8px] rounded-[12px]`}>
+                            <FaUser size={19}/>
+                        </span>
                         <span className=" text-[12px] font-medium hidden lg:block">Profile</span>
                     </Link>
                     <Link href={'/'} 
-                        className={`flex items-center gap-3 px-4 py-3 rounded-[15px]`}
+                        className={`flex items-center gap-3 px-4 py-2 my-1 rounded-[15px]`}
                     >
-                        <IoLogOut size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
+                        <span className="text-tcolor bg-dcolor p-[8px] rounded-[12px]">
+                            <IoLogOut size={19}/>
+                        </span>
                         <span className=" text-[12px] font-medium hidden lg:block">Log out</span>
                     </Link>
                 </div>

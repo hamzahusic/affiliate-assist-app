@@ -63,7 +63,7 @@ const page = () => {
                         <table className="min-w-full leading-normal max-w-[630px]">
                             <thead>
                                 <tr>
-                                    <th className="py-3 border-b-[1px] text-left text-[11px] font-medium uppercase tracking-wider w-[45%]">
+                                    <th className="py-3 border-b-[1px] text-left text-[11px] font-medium uppercase tracking-wider md:w-[45%] w-[55%]">
                                         NAME
                                     </th>
                                     <th className="py-3 border-b-[1px] text-left text-[11px] font-medium uppercase tracking-wider w-[25%]">
@@ -81,7 +81,7 @@ const page = () => {
                                 <tbody className=" text-xs md:text-sm">
                                     {data.map((item, index) => (
                                         <tr key={item.id}>
-                                            <td className="border-b-[1px] py-3 w-[45%]">
+                                            <td className="border-b-[1px] py-3 w-[45%] md:w-[50%]">
                                                 {(index + 1) + ". " + item.name}
                                             </td>
                                             <td className="border-b-[1px] py-3 w-[25%]">
