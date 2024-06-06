@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaHome, FaPhotoVideo, FaUser } from "react-icons/fa";
+import { FaHome, FaUser } from "react-icons/fa";
 import { BsFillPostcardHeartFill } from "react-icons/bs";
 import { AiFillProduct, AiOutlineQuestionCircle } from "react-icons/ai";
 import { IoDocumentText, IoLogOut } from "react-icons/io5";
@@ -37,11 +37,6 @@ const Layout = ({children}) => {
             name : 'Emails',
             href : '/dashboard/email',
             icon : <MdEmail size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
-        },
-        {
-            name : 'Videos',
-            href : '/dashboard/video',
-            icon : <FaPhotoVideo size={35} className=" text-tcolor bg-dcolor p-[8px] rounded-[12px]"/>
         }
     ]
     

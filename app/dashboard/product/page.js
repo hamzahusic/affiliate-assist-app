@@ -7,7 +7,7 @@ const page = () => {
     const productData = [
         {
             name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
+            imageSrc: 'https://th.bing.com/th/id/R.631476b3657ffeb5d7b79611c1fea80c?rik=ZjlWaQPvqUfLAA&pid=ImgRaw&r=0',
             category: 'Laptop',
             brand: 'DELL',
             price: 1299,
@@ -15,7 +15,7 @@ const page = () => {
         },
         {
             name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
+            imageSrc: 'https://th.bing.com/th/id/R.631476b3657ffeb5d7b79611c1fea80c?rik=ZjlWaQPvqUfLAA&pid=ImgRaw&r=0',
             category: 'Laptop',
             brand: 'DELL',
             price: 1299,
@@ -23,7 +23,7 @@ const page = () => {
         },
         {
             name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
+            imageSrc: 'https://th.bing.com/th/id/R.631476b3657ffeb5d7b79611c1fea80c?rik=ZjlWaQPvqUfLAA&pid=ImgRaw&r=0',
             category: 'Laptop',
             brand: 'DELL',
             price: 1299,
@@ -31,7 +31,7 @@ const page = () => {
         },
         {
             name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
+            imageSrc: 'https://th.bing.com/th/id/R.631476b3657ffeb5d7b79611c1fea80c?rik=ZjlWaQPvqUfLAA&pid=ImgRaw&r=0',
             category: 'Laptop',
             brand: 'DELL',
             price: 1299,
@@ -39,7 +39,7 @@ const page = () => {
         },
         {
             name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
+            imageSrc: 'https://th.bing.com/th/id/R.631476b3657ffeb5d7b79611c1fea80c?rik=ZjlWaQPvqUfLAA&pid=ImgRaw&r=0',
             category: 'Laptop',
             brand: 'DELL',
             price: 1299,
@@ -47,7 +47,7 @@ const page = () => {
         },
         {
             name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
+            imageSrc: 'https://th.bing.com/th/id/R.631476b3657ffeb5d7b79611c1fea80c?rik=ZjlWaQPvqUfLAA&pid=ImgRaw&r=0',
             category: 'Laptop',
             brand: 'DELL',
             price: 1299,
@@ -55,7 +55,7 @@ const page = () => {
         },
         {
             name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
+            imageSrc: 'https://th.bing.com/th/id/R.631476b3657ffeb5d7b79611c1fea80c?rik=ZjlWaQPvqUfLAA&pid=ImgRaw&r=0',
             category: 'Laptop',
             brand: 'DELL',
             price: 1299,
@@ -63,7 +63,7 @@ const page = () => {
         },
         {
             name: 'Dell XPS 13 9320',
-            imageSrc: 'https://novabytes.co.uk/cdn/shop/files/notebook-xps-17-9730-t-gray-gallery-12_7cb96987-2f20-48f2-ad1d-189ffd3edea6_1280x.png',
+            imageSrc: 'https://th.bing.com/th/id/R.631476b3657ffeb5d7b79611c1fea80c?rik=ZjlWaQPvqUfLAA&pid=ImgRaw&r=0',
             category: 'Laptop',
             brand: 'DELL',
             price: 1299,
