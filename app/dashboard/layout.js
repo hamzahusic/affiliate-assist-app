@@ -116,7 +116,7 @@ const Layout = ({children}) => {
                     </Link>
                 </div>
                 {/* HELP LINK */}
-                <div className=" p-[10px] lg:p-4 bg-dcolor rounded-[15px] flex-col flex mt-10 text-center lg:text-left">
+                <div className=" p-[10px] lg:p-4 bg-[#FFEDBD] rounded-[15px] flex-col flex mt-10 text-center lg:text-left">
                     <AiOutlineQuestionCircle size={35} className=" text-tcolor bg-white p-2 mb-3 lg:mb-5 rounded-xl "/>
                     <p className=" text-sm font-medium">Need help?</p>
                     <p className=" text-xs hidden lg:block">Please check our demo</p>

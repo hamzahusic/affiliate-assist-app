@@ -3,7 +3,7 @@ import Image from "next/image";
 const page = () => {
     return ( 
         <>
-            <div className="bg-dcolor max-h-[220px] h-full shadow-xs rounded-[15px]"></div>
+            <div className="bg-dcolor max-h-[220px] h-full shadow-xs rounded-[15px] border-[1px] border-tcolor/20"></div>
             <div>
                 <Image
                     width={100}
