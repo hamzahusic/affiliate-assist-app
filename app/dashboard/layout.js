@@ -9,6 +9,7 @@ import { AiFillProduct, AiOutlineQuestionCircle } from "react-icons/ai";
 import { IoDocumentText, IoLogOut } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { usePathname } from "next/navigation";
+import { signOut } from "next-auth/react";
 
 const Layout = ({children}) => {
 
@@ -79,6 +80,7 @@ const Layout = ({children}) => {
                         width={16}
                         height={19}
                         quality={100}
+                        priority={true}
                         alt="logo"
                     />
                     <p className=" text-[15px] font-semibold hidden lg:block">AFFILIATE ASSIST</p>
@@ -106,14 +108,14 @@ const Layout = ({children}) => {
                         </span>
                         <span className=" text-[12px] font-medium hidden lg:block">Profile</span>
                     </Link>
-                    <Link href={'/'} 
+                    <button onClick={() => signOut()}
                         className={`flex items-center gap-3 px-4 py-2 my-1 rounded-[15px]`}
                     >
                         <span className="text-tcolor bg-dcolor p-[8px] rounded-[12px]">
                             <IoLogOut size={19}/>
                         </span>
                         <span className=" text-[12px] font-medium hidden lg:block">Log out</span>
-                    </Link>
+                    </button>
                 </div>
                 {/* HELP LINK */}
                 <div className=" p-[10px] lg:p-4 bg-[#FFEDBD] rounded-[15px] flex-col flex mt-10 text-center lg:text-left">

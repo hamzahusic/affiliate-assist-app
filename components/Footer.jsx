@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="bg-tcolor text-white px-5">
             <div className=" main-container py-[50px] md:py-[100px] flex justify-around items-center">
                 <div className=" max-w-[350px]">
-                    <h2 className=" font-semibold text-[45px] md:text-[60px] md:leading-[90px]">Questions? Let’s talk </h2>
+                    <h2 className=" font-semibold text-[45px] md:text-[60px] leading-[60px] md:leading-[90px]">Questions? Let’s talk </h2>
                     <p className=" py-7 text-lg font-normal">Contact us through our social network. We’re always happy to help!</p>
                     <Link 
                     href={"/"}

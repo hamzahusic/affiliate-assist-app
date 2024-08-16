@@ -30,12 +30,12 @@ const Navbar = () => {
                 <Link href={"/signup"} className="bg-tcolor text-white py-3 px-11 rounded-md">Sign Up</Link>
             </div>
             <IoMenu size={30} className=" cursor-pointer md:hidden" onClick={() => setIsOpen(!isOpen)}/>
-            {isOpen && <div className=" absolute top-0 left-0 bottom-0 bg-tcolor text-white flex flex-col px-2 py-10 gap-2 text-center openNav w-[300px]">
-                <Link href={"/"} className=" px-20 py-3 transition-all rounded-md">About Us</Link>
-                <Link href={"/"} className=" px-20 py-3 transition-all rounded-md">View Demo</Link>
-                <Link href={"/"} className=" px-20 py-3 transition-all rounded-md">Pricing</Link>
-                <Link href={"/login"} className=" px-20 py-3 transition-all rounded-md">Log In</Link>
-                <Link href={"/signup"} className=" px-20 py-3 bg-white transition-all text-tcolor rounded-md">Sign Up</Link>
+            {isOpen && <div className=" fixed top-0 left-0 md:hidden bottom-0 bg-tcolor text-white flex flex-col px-2 py-10 gap-2 text-center openNav w-[300px]">
+                <Link href={"/"} className=" px-20 py-3 transition-all rounded-md text-nowrap">About Us</Link>
+                <Link href={"/"} className=" px-20 py-3 transition-all rounded-md text-nowrap">View Demo</Link>
+                <Link href={"/"} className=" px-20 py-3 transition-all rounded-md text-nowrap">Pricing</Link>
+                <Link href={"/login"} className=" px-20 py-3 transition-all rounded-md text-nowrap">Log In</Link>
+                <Link href={"/signup"} className=" px-20 py-3 bg-white transition-all text-tcolor rounded-md text-nowrap">Sign Up</Link>
             </div>}
         </div>
      );

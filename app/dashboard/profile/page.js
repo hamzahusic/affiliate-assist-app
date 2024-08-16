@@ -15,11 +15,11 @@ const page = () => {
 
                 <form className=" flex flex-col max-w-[487px] mx-auto gap-4 px-5 md:px-0">
                     <div className=" flex gap-[21px] flex-col md:flex-row">
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 flex-1">
                             <label htmlFor="name" className=" font-medium">First name</label>
                             <input type="text" name="name" className=" outline-none p-1 rounded-[5px] border-[1px] border-tcolor"/>
                         </div>
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 flex-1">
                             <label htmlFor="lname" className=" font-medium">Last name</label>
                             <input type="text" name="lname" className=" outline-none p-1 rounded-[5px] border-[1px] border-tcolor"/>
                         </div>

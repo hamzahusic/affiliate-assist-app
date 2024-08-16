@@ -5,7 +5,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 const Pricing = () => {
     return ( 
         <div className=" main-container pb-32 pt-16 px-5">
-            <p className=" uppercase font-bold text-lg tracking-[5px] text-center">pricing</p>
+            <p className=" uppercase font-bold text-lg text-center">pricing</p>
             <h2 className=" text-[40px] font-bold mt-7 mb-2 text-center">Pricing plans for all use cases</h2>
             <p className="text-lg max-w-[742px] mx-auto text-center">Pricing plans designed to fit every affiliate marketer's needs. Our transparent pricing ensures you get the features you need without hidden costs or surprises.</p>
             <div className=" mt-12 max-w-[786px] mx-auto bg-white rounded-[20px] shadow flex flex-col sm:flex-row overflow-hidden">
@@ -29,11 +29,11 @@ const Pricing = () => {
                         Affordable plans tailored for your affiliate marketing success journey.
                     </p>
 
-                    <p className="text-[#6F6C90]"><span className=" font-bold text-5xl text-tcolor">$99</span> / one time payment</p>
+                    <p className="text-[#6F6C90]"><span className=" font-bold text-5xl text-tcolor">$10</span> / 1000 credits</p>
 
                     <Link 
-                    href={"/"}
-                    className=" py-6 bg-mcolor rounded-[96px] mt-6 text-white w-full text-center"
+                    href={"/signup"}
+                    className=" py-6 bg-mcolor rounded-[96px] mt-6 text-white w-[95%] sm:w-full text-center"
                     >
                         Get started
                     </Link>
@@ -45,15 +45,15 @@ const Pricing = () => {
                         <div className=" flex flex-col gap-4">
                             <p className="flex items-center gap-3">
                                 <FaCircleCheck size={26} className=" text-mcolor"/>
-                                One year support
+                                24h support
                             </p>
                             <p className="flex items-center gap-3">
                                 <FaCircleCheck size={26} className=" text-mcolor"/>
-                                Up to 15,000 products
+                                Unlimited products
                             </p>
                             <p className="flex items-center gap-3">
                                 <FaCircleCheck size={26} className=" text-mcolor"/>
-                                Full acces to all tools
+                                Full access to all tools
                             </p>
                             <p className="flex items-center gap-3">
                                 <FaCircleCheck size={26} className=" text-mcolor"/>
